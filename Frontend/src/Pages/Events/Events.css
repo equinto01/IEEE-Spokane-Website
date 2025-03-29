@@ -1,0 +1,420 @@
+/* Main container for the events page */
+.events-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+}
+
+/* Header container for events section */
+.events-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+/* Styles for the main header title */
+.events-header h1 {
+  color: var(--ieee-dark-blue);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the header paragraph */
+.events-header p {
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+/* Margin for both upcoming and past events sections */
+.upcoming-events-section,
+.past-events-section {
+  margin-bottom: 80px;
+  position: relative;
+  padding: 0 30px;
+}
+
+/* Heading styles for upcoming and past events sections */
+.upcoming-events-section h2,
+.past-events-section h2 {
+  color: var(--ieee-dark-blue);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Container for events content */
+.events-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Styling for events message box */
+.events-message {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  max-width: 600px;
+}
+
+/* Heading style inside the events message */
+.events-message h2 {
+  color: var(--ieee-dark-blue);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Paragraph style inside the events message */
+.events-message p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Grid layout for displaying event cards */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Styling for an individual event card */
+.event-card {
+  margin: 0 auto;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the event banner image */
+.event-banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  min-height: 400px;
+}
+
+/* Clickable event banner image */
+.event-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  max-height: 600px;
+}
+
+.event-banner img:hover {
+  opacity: 0.9;
+}
+
+/* Container for the event content */
+.event-content {
+  padding: 2rem;
+}
+
+/* Badge style for event type */
+.event-type-badge {
+  display: inline-block;
+  background: var(--ieee-blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Style for event title */
+.event-title {
+  color: var(--ieee-dark-blue);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Style for event description */
+.event-description {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Container for event meta information */
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: var(--pale-blue);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Styling for each meta item */
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+/* Styling for meta icons */
+.meta-icon {
+  color: var(--ieee-blue);
+  font-size: 1.2rem;
+}
+
+/* Container for event action buttons */
+.event-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for the register button */
+.register-button {
+  display: inline-block;
+  background: var(--ieee-blue);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 200px;
+}
+
+/* Hover effect for the register button */
+.register-button:hover {
+  background: var(--ieee-dark-blue);
+  transform: translateY(-2px);
+}
+
+/* Styling for message when no events are available */
+.no-events {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Single event container styles */
+.single-event-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Event slider styles */
+.event-slider {
+  padding: 0 10px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.events-page .event-slide {
+  padding: 0 10px;
+  height: 100%;
+}
+
+/* Ensure the slider arrows are visible and positioned correctly */
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: .75;
+  color: var(--ieee-dark-blue);
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: transparent;
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+  opacity: 1;
+}
+
+.events-page .slick-slider {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.events-page .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.events-page .slick-track {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.events-page .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: flex !important;
+}
+
+.events-page .slick-slide > div {
+  width: 100%;
+}
+
+/* Customize slick dots for events page */
+.events-page .slick-dots {
+  bottom: -40px;
+}
+
+.events-page .slick-dots li button:before {
+  color: var(--ieee-blue);
+  font-size: 12px;
+}
+
+.events-page .slick-dots li.slick-active button:before {
+  color: var(--ieee-dark-blue);
+}
+
+/* Image Preview Modal */
+.image-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.image-preview-modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.image-preview-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.image-preview-close:hover {
+  opacity: 0.8;
+}
+
+/* Responsive styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  /* Adjust events page padding for mobile */
+  .events-page {
+    padding: 1rem;
+  }
+
+  /* Adjust header padding for mobile */
+  .events-header {
+    padding: 1rem 0;
+  }
+
+  /* Reduce font size of header title on mobile */
+  .events-header h1 {
+    font-size: 2rem;
+  }
+
+  /* Single column grid layout for events on mobile */
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust margin of event cards on mobile */
+  .event-card {
+    margin: 0 1rem;
+  }
+
+  /* Limit event banner image height for mobile */
+  .event-banner {
+    min-height: 300px;
+  }
+  
+  .event-banner img {
+    max-height: 400px;
+  }
+
+  /* Reduce font size for event title on mobile */
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  /* Reduce font size for event description on mobile */
+  .event-description {
+    font-size: 1rem;
+  }
+
+  /* Reduce font size for meta items on mobile */
+  .meta-item {
+    font-size: 1rem;
+  }
+}
